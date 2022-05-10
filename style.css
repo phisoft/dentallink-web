@@ -1772,7 +1772,11 @@ p {
   border-radius: 18px;
 }
 .map-style-9 {
-  margin-top: -130px;
+  /*margin-top: -130px;*/
+  padding-top: 50px;
+  position: relative;
+  height: 400px;
+  width: 100%;
 }
 
 
