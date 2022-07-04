@@ -914,16 +914,21 @@ p {
 .header-eight {
   position: relative;
   padding:160px 0 100px 0;
-  background: var(--primary);
+  background-image: url('/dentallink-web/assets/images/header/header-img.jpg');
+  height: 100vh;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px){
   .header-eight {
-    padding: 130px 0 80px 0;
+    /* padding: 130px 0 80px 0; */
+    padding-right: 50px;
+    background-position: 20% 20%;
   }
 }
-@media (max-width: 767px) {
+
+@media only screen and (min-width:375px) {
   .header-eight {
     padding: 100px 0 60px 0;
+    background-position: 40% 40%;
   }
 }
 .header-eight .header-image img {
@@ -943,9 +948,10 @@ p {
 }
 .header-eight .header-content h1 {
   font-weight: 700;
-  color: var(--white);
+  color: var(--black);
   text-shadow: 0px 3px 8px #00000017;
   text-transform: capitalize;
+  padding-top: 200px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-eight .header-content h1  {
@@ -953,18 +959,31 @@ p {
     line-height: 45px;
   }
 }
+
+@media (max-width: 376) {
+  .header-eight .header-content h1  {
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 550px;
+  }
+}
+
 @media (max-width: 767px) {
   .header-eight .header-content h1  {
     font-size: 30px;
     line-height: 42px;
   }
 }
+
+
 .header-eight .header-content h1 span {
   display: block;
 }
+
 .header-eight .header-content p {
   margin-top: 30px;
-  color: var(--white);
+  color: var(--black);
   opacity: 0.7;
 }
 .header-eight .button {
@@ -972,8 +991,8 @@ p {
 }
 .header-eight .primary-btn {
   margin-right: 12px;
-  background-color: var(--white);
-  color: var(--primary);
+  background-color: var(--primary);
+  color: var(--white);
   border: 1px solid transparent;
 }
 .header-eight .primary-btn:hover {
