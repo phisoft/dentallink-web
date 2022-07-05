@@ -916,7 +916,10 @@ p {
   padding:160px 0 100px 0;
   background-image: url('/dentallink-web/assets/images/header/header-img.jpg');
   height: 100vh;
+  background-repeat: no-repeat;
+  
 }
+
 @media only screen and (min-width: 768px){
   .header-eight {
     /* padding: 130px 0 80px 0; */
@@ -935,6 +938,7 @@ p {
   width: 100%;
   border-radius: 8px;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .header-eight .header-image {
     margin-top: 40px;
@@ -951,31 +955,37 @@ p {
   color: var(--black);
   text-shadow: 0px 3px 8px #00000017;
   text-transform: capitalize;
-  padding-top: 200px;
+  padding-top: 5em;
+  text-align: left;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .header-eight .header-content h1  {
-    font-size: 35px;
-    line-height: 45px;
-  }
+.header-eight .header-content h1 span {
+  display: block;
 }
 
-@media (max-width: 376) {
+.header-eight .header-content p {
+  margin-top: 30px;
+  color: var(--black);
+  opacity: 0.8;
+  text-align: left;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 767px), (max-width: 320px) {
   .header-eight .header-content h1  {
-    font-size: 30px;
+    font-size: 34px;
     line-height: 42px;
+    padding-top: 8.5em;
     text-align: center;
-    padding-top: 550px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 320px) {
   .header-eight .header-content h1  {
-    font-size: 30px;
+    font-size: 34px;
     line-height: 42px;
+    padding-top: 1.8em;
+    text-align: center;
   }
 }
-
 
 .header-eight .header-content h1 span {
   display: block;
@@ -984,13 +994,30 @@ p {
 .header-eight .header-content p {
   margin-top: 30px;
   color: var(--black);
-  opacity: 0.7;
+  opacity: 0.8;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+  .header-eight .header-content p {
+    margin-top: 30px;
+    color: var(--black);
+    opacity: 0.8;
+    text-align: left;
+  }
 }
 .header-eight .button {
-  margin-top: 40px;
+  margin-top: 36px;
+  text-align: center;
+}
+
+@media (min-width: 765px) {
+  .header-eight .button {
+    margin-top: 36px;
+    text-align: left;
+  }
 }
 .header-eight .primary-btn {
-  margin-right: 12px;
   background-color: var(--primary);
   color: var(--white);
   border: 1px solid transparent;
