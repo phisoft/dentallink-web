@@ -914,7 +914,7 @@ p {
 .header-eight {
   position: relative;
   padding:160px 0 100px 0;
-  background-image: url('/dentallink-web/assets/images/header/header-img.jpg');
+  background-image: url('assets/images/header/header-img.jpg');
   height: 100vh;
   background-repeat: no-repeat;
   
