@@ -929,10 +929,23 @@ p {
   }
 }
 
-@media only screen and (min-width:375px) {
+@media only screen and (min-width:321px) and (max-width:900px) {
   .header-eight {
-    padding: 100px 0 60px 0;
-    background-position: 40% 40%;
+    padding: 100px 0 40px 0;
+    background-position: 34% 34% ;
+    background-size: cover;
+    position: relative;
+    
+  }
+  .header-eight .header-content p {
+    font-weight: bolder;
+    border: 30px;
+    border-radius: 20px;
+    font-size: 13px;
+    text-align: left;
+  }
+  .header-eight .header-content .button {
+  margin-top: 10%;
   }
 }
 .header-eight .header-image img {
@@ -950,6 +963,7 @@ p {
   position: relative;
   z-index: 1;
   text-align: left;
+  margin-right: 50px;
 }
 .header-eight .header-content h1 {
   font-weight: 700;
@@ -970,12 +984,15 @@ p {
   text-align: left;
 }
 
-@media only screen and (min-width: 321px) and (max-width: 767px), (max-width: 320px) {
+@media only screen and (min-width: 321px) and (max-width: 767px), (max-width: 900px) {
   .header-eight .header-content h1  {
     font-size: 34px;
     line-height: 42px;
     padding-top: 8.5em;
     text-align: center;
+    border: var(--black);
+    text-shadow: 4px 4px 6px grey;
+    
   }
 }
 
