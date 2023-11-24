@@ -166,3 +166,15 @@ $(document).ready(function($) {
  
     });
 });
+
+function openPopup(imgSrc) {
+    var modal = document.getElementById("imagePopup");
+    var modalImg = document.getElementById("modalImg");
+    modal.style.display = "block";
+    modalImg.src = imgSrc;
+  }
+
+  function closePopup() {
+    var modal = document.getElementById("imagePopup");
+    modal.style.display = "none";
+  }

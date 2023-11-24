@@ -540,13 +540,19 @@
     <!-- container -->
   </div>
   <!--======  End Section Title Five ======-->
+  <!--====== Image popup modal start ======-->
+  <div id="imagePopup" class="modal">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+  <!--====== Image popup modal end ======-->
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-6 col-12">
         <!-- Single News -->
         <div class="single-news">
           <div class="image">
-            <a href="javascript:void(0)"><img class="thumb" src="assets/images/screen1.png" /></a>
+            <a href="javascript:void(0)" onclick="openPopup('assets/images/screen1.png')"><img class="thumb" src="assets/images/screen1.png" /></a>
             <div class="meta-details">
               <span>DASHBOARD</span>
             </div>
@@ -568,7 +574,7 @@
         <!-- Single News -->
         <div class="single-news">
           <div class="image">
-            <a href="javascript:void(0)"><img class="thumb" src="assets/images/screen2.png" /></a>
+            <a href="javascript:void(0)" onclick="openPopup('assets/images/screen2.png')"><img class="thumb" src="assets/images/screen2.png" /></a>
             <div class="meta-details">
               <span>APPOINTMENT</span>
             </div>
@@ -590,7 +596,7 @@
         <!-- Single News -->
         <div class="single-news">
           <div class="image">
-            <a href="javascript:void(0)"><img class="thumb" src="assets/images/screen3.png" /></a>
+            <a href="javascript:void(0)" onclick="openPopup('assets/images/screen3.png')"><img class="thumb" src="assets/images/screen3.png" /></a>
             <div class="meta-details">
               <span>PATIENT ACTIVITY</span>
             </div>
