@@ -432,7 +432,7 @@ p {
 .navbar-area.navbar-nine .navbar .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
-  background-color: var(--white);
+  background-color: var(--primary);
   margin: 5px 0;
   display: block;
   position: relative;
@@ -512,6 +512,7 @@ p {
     display: block;
     border: 0;
     margin: 0;
+    color: var(--accent-light);
   }
 }
 .navbar-area.navbar-nine .navbar .navbar-nav .nav-item a.active {
