@@ -1041,9 +1041,9 @@ p {
   border: 1px solid transparent;
 }
 .header-eight .primary-btn:hover {
-  background-color: transparent;
-  color: var(--white);
-  border-color: var(--white);
+  background-color: var(--light-3);   
+  color: var(--primary);   
+  border-color: var(--primary); 
 }
 .header-eight .video-button {
   display: inline-flex;
