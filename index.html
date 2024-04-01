@@ -148,7 +148,7 @@
               DentalLink helps dentist to manage, monitor and streamline daily clinics' operations.
             </p>
             <div class="button">
-              <a href="javascript:void(0)" class="btn primary-btn">Schedule a demo</a>
+              <a href="#contact" class="btn primary-btn">Schedule a demo</a>
               <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
                 class="glightbox video-button">
                 <!-- <span class="btn icon-btn rounded-full">
@@ -707,7 +707,7 @@
                 </div>
               </div>
             </div>
-            <form action="https://formsubmit.co/hello@phisoft.my" method="POST" class="contact-form">
+            <form onsubmit="sendEmail(); reset(); return false;" class="contact-form">
               <div class="row">
                 
                 <div class="col-md-6">
@@ -837,7 +837,26 @@
   <script src="assets/js/scripts.js"></script>
   <script src="assets/js/jquery.magnific-popup.min.js"></script>
   <script src="assets/js/jquery.owl.carousel.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
+		function sendEmail(){
+		Email.send({
+			Host  : "smtp.elasticemail.com",
+			Username : "phisoft.marketing@gmail.com",
+			Password : "54C6C6E3B10D11FB45C043A9F15C1AFDCA0F",
+			To  : 'hello@phisoft.my',
+			From  : "phisoft.marketing@gmail.com",
+			Subject : "Feecollec Contact Form Submission",
+			Body  : "Name: " + document.getElementById("name").value
+        + "<br> Email: " + document.getElementById("email").value
+				+ "<br> Phone Number: " + document.getElementById("phone").value
+				+ "<br> Subject: " + document.getElementById("subject").value
+				+ "<br> Message: " + document.getElementById("message").value
+		}).then(
+			message => alert("Message successfully sent.")
+		);
+		}
+	</script>
 
     //===== close navbar-collapse when a  clicked
     let navbarTogglerNine = document.querySelector(
