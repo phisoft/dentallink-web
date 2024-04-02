@@ -684,7 +684,7 @@
                   <div class="contact-content">
                     <h4>Operating Hours</h4>
                     <p>Monday - Friday</p>
-                    <p>8:00 AM - 5: PM</p>
+                    <p>8:00 AM - 5:00 PM</p>
                   </div>
                 </div>
               </div>
@@ -711,18 +711,18 @@
               <div class="row">
                 
                 <div class="col-md-6">
-                  <input type="text" name="name" id="name" placeholder="Name" required />
+                  <input type="text" name="name" id="name" placeholder="Name" class="demo-input" />
                 </div>
                 <div class="col-md-6">
-                  <input type="email" name="email" id="email" placeholder="Email" required />
+                  <input type="email" name="email" id="email" placeholder="Email" class="demo-input" />
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <input type="text" name="phone" id="phone" placeholder="Phone" required />
+                  <input type="text" name="phone" id="phone" placeholder="Phone" class="demo-input"/>
                 </div>
                 <div class="col-md-6">
-                  <input type="text" name="subject" id="subject" placeholder="Subject" required />
+                  <input type="text" name="subject" id="subject" placeholder="Subject" class="demo-input"/>
                 </div>
                 <div class="col-md-6">
                   <input type="hidden" name="Website" value="DentalLink" />
@@ -730,7 +730,7 @@
               </div>
               <div class="row">
                 <div class="col-12">
-                  <textarea name="message" id="message" placeholder="Type Message" rows="5"></textarea>
+                  <textarea name="message" id="message" placeholder="Type Message" rows="5" class="demo-input"></textarea>
                 </div>
               </div>
               <div class="row">
@@ -840,21 +840,39 @@
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
 		function sendEmail(){
-		Email.send({
-			Host  : "smtp.elasticemail.com",
-			Username : "phisoft.marketing@gmail.com",
-			Password : "54C6C6E3B10D11FB45C043A9F15C1AFDCA0F",
-			To  : 'hello@phisoft.my',
-			From  : "phisoft.marketing@gmail.com",
-			Subject : "DentalLink Contact Form Submission",
-			Body  : "Name: " + document.getElementById("name").value
-        + "<br> Email: " + document.getElementById("email").value
-				+ "<br> Phone Number: " + document.getElementById("phone").value
-				+ "<br> Subject: " + document.getElementById("subject").value
-				+ "<br> Message: " + document.getElementById("message").value
-		}).then(
-			message => alert("Message successfully sent.")
-		);
+      if (validateForm()) {
+        Email.send({
+          Host  : "smtp.elasticemail.com",
+          Username : "phisoft.marketing@gmail.com",
+          Password : "54C6C6E3B10D11FB45C043A9F15C1AFDCA0F",
+          To  : 'hello@phisoft.my',
+          From  : "phisoft.marketing@gmail.com",
+          Subject : "DentalLink Contact Form Submission",
+          Body  : "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Phone Number: " + document.getElementById("phone").value
+            + "<br> Subject: " + document.getElementById("subject").value
+            + "<br> Message: " + document.getElementById("message").value
+        }).then(
+          message => alert("Message successfully sent.")
+        );
+      } else {
+        alert("Please fill out all required fields.");
+      }
+    } 
+
+    function validateForm() {
+			var isValid = true;
+			var inputs = document.getElementsByClassName('demo-input');
+			for (var i = 0; i < inputs.length; i++) {
+				if (!inputs[i].value) {
+					isValid = false;
+					inputs[i].classList.add('is-invalid');
+				} else {
+					inputs[i].classList.remove('is-invalid');
+				}
+			}
+			return isValid;
 		}
 	</script>
 
