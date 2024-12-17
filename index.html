@@ -707,25 +707,25 @@
                 </div>
               </div>
             </div>
-            <form onsubmit="sendEmail(); reset(); return false;" class="contact-form">
+            <form class="contact-form" id="contact-form" action="https://send.bah.my/aGVsbG9AcGhpc29mdC5teQ==" enctype="application/x-www-form-urlencoded" method="POST">
               <div class="row">
                 
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <input type="text" name="name" id="name" placeholder="Name" class="demo-input" />
                 </div>
-                <div class="col-md-6">
-                  <input type="email" name="email" id="email" placeholder="Email" class="demo-input" />
-                </div>
+
               </div>
               <div class="row">
                 <div class="col-md-6">
+                  <input type="email" name="email" id="email" placeholder="Email" class="demo-input" />
+                </div>
+                <div class="col-md-6">
                   <input type="text" name="phone" id="phone" placeholder="Phone" class="demo-input"/>
                 </div>
-                <div class="col-md-6">
-                  <input type="text" name="subject" id="subject" placeholder="Subject" class="demo-input"/>
-                </div>
-                <div class="col-md-6">
-                  <input type="hidden" name="Website" value="DentalLink" />
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <input name="subject" id="subject" value="Contact Form Submission via Dentallink.com" type="hidden" placeholder="Subject" required>
                 </div>
               </div>
               <div class="row">
