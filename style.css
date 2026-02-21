@@ -2249,6 +2249,7 @@ p {
 
 .revamp-theme .header-eight {
   min-height: 92vh;
+  height: auto;
   display: flex;
   align-items: center;
   background-image: linear-gradient(118deg, rgba(15, 36, 53, 0.82) 8%, rgba(18, 43, 63, 0.68) 54%, rgba(20, 58, 84, 0.72) 100%), url("assets/images/header/index.jpeg");
@@ -2316,6 +2317,7 @@ p {
 }
 
 .revamp-theme .header-eight .header-content {
+  margin-right: 0;
   background: rgba(15, 36, 53, 0.42);
   border: 1px solid rgba(174, 220, 245, 0.2);
   border-radius: 20px;
@@ -2685,6 +2687,7 @@ p {
 
   .revamp-theme .header-eight {
     min-height: auto;
+    height: auto;
     padding: 140px 0 70px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -2708,5 +2711,28 @@ p {
 
   .revamp-theme .call-action {
     margin: 0 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .revamp-theme .header-eight {
+    padding: 118px 0 52px;
+  }
+
+  .revamp-theme .header-eight .header-content {
+    padding: 20px;
+  }
+
+  .revamp-theme .header-eight .button {
+    gap: 10px;
+  }
+
+  .revamp-theme .header-eight .button .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-preview-card {
+    padding: 22px;
   }
 }
