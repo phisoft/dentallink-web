@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Start your trial | DentalLink</title>
+    <meta
+      name="description"
+      content="Get started with a DentalLink trial for your dental practice."
+    />
+    <link rel="icon" href="assets/images/dentallink_fav.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="assets/js/signup.js" defer></script>
+  </head>
+  <body class="signup-page">
+    <header class="site-header signup-header">
+      <a class="brand" href="index.html" aria-label="DentalLink home"
+        ><img
+          class="brand-logo"
+          src="assets/images/dentallink_logo.png"
+          alt="DentalLink"
+          width="200"
+          height="72" /></a
+      ><a class="text-link" href="index.html">← Back to DentalLink</a>
+    </header>
+    <main class="signup-layout container">
+      <section class="signup-intro">
+        <span class="eyebrow">GET STARTED WITH DENTALLINK</span>
+        <h1>A better day.<br />Starts <span>right here.</span></h1>
+        <p>One workspace for your team.<br />More time for your patients.</p>
+        <ul class="signup-benefits">
+          <li>
+            <span>✓</span>
+            <div>
+              <h2>Your patients, connected.</h2>
+              <p>Bring records, appointments, and clinical care together.</p>
+            </div>
+          </li>
+          <li>
+            <span>✓</span>
+            <div>
+              <h2>A clearer view of your practice.</h2>
+              <p>Keep billing and daily workflows in one place.</p>
+            </div>
+          </li>
+          <li>
+            <span>✓</span>
+            <div>
+              <h2>Make it your own.</h2>
+              <p>Explore how DentalLink fits your clinic’s routine.</p>
+            </div>
+          </li>
+        </ul>
+        <p class="signup-help">
+          Need a hand?
+          <a
+            href="https://wa.me/60128669695"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Chat with our team ↗</a
+          >
+        </p>
+      </section>
+      <section class="signup-card" aria-labelledby="signup-heading">
+        <h2 id="signup-heading">Start your trial.</h2>
+        <p class="signup-subtitle">A few details to get your clinic started.</p>
+        <p class="signup-notice" id="registration-notice">
+          Online account creation is not connected yet. This form previews the
+          signup process; it won’t create an account or send your details.
+        </p>
+        <form id="signup-form" aria-describedby="registration-notice">
+          <div class="signup-fields">
+            <label for="full-name"
+              >Full name<input
+                id="full-name"
+                name="name"
+                autocomplete="name"
+                placeholder="Your full name"
+                required
+                maxlength="120" /></label
+            ><label for="clinic-name"
+              >Clinic name<input
+                id="clinic-name"
+                name="clinic"
+                autocomplete="organization"
+                placeholder="Your dental practice"
+                required
+                maxlength="160" /></label
+            ><label for="work-email"
+              >Work email<input
+                id="work-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@clinic.com"
+                required
+                maxlength="254" /></label
+            ><label for="phone"
+              >Phone number<input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                placeholder="+60"
+                required
+                maxlength="30" /></label
+            ><label for="password"
+              >Create a password
+              <div class="password-field">
+                <input
+                  id="password"
+                  type="password"
+                  autocomplete="new-password"
+                  placeholder="At least 12 characters"
+                  minlength="12"
+                  required
+                  aria-describedby="password-help"
+                /><button
+                  type="button"
+                  id="toggle-password"
+                  aria-controls="password"
+                  aria-pressed="false"
+                >
+                  Show
+                </button>
+              </div>
+              <span class="field-help" id="password-help"
+                >Use at least 12 characters.</span
+              ></label
+            >
+          </div>
+          <button class="button signup-submit" type="submit">
+            Create trial account <span>↗</span>
+          </button>
+          <p
+            id="signup-status"
+            class="signup-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+          <p class="signup-footnote">
+            No information is saved by this preview.
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer class="container signup-footer">
+      <p>© <span id="year">2026</span> DentalLink · Phi Software Sdn Bhd</p>
+      <a
+        href="https://wa.me/60128669695"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Contact support ↗</a
+      >
+    </footer>
+  </body>
+</html>
