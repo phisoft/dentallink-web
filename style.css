@@ -137,13 +137,6 @@ summary {
   background: #27acbd;
   margin-right: 8px;
 }
-.hero h1 {
-  font-size: clamp(70px, 8.3vw, 120px);
-  font-weight: 500;
-  letter-spacing: -6px;
-  line-height: 1.02;
-  margin: 31px 0 30px;
-}
 .serif {
   font-family: "Instrument Serif", Georgia, serif;
   font-weight: 400;
@@ -599,11 +592,6 @@ footer > a:last-child {
   .eyebrow {
     font-size: 8px;
     letter-spacing: 1.1px;
-  }
-  .hero h1 {
-    font-size: 76px;
-    letter-spacing: -4px;
-    margin-top: 25px;
   }
   .hero-bottom {
     display: block;
