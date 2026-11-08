@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Instrument+Serif:ital@0;1&display=swap");
 :root {
   --primary: #27acbd;
   --primary-dark: #1b8694;
@@ -106,10 +105,6 @@ summary {
     background 0.2s,
     transform 0.2s;
 }
-.button:hover {
-  background: #1b8694;
-  transform: translateY(-2px);
-}
 .button span {
   font-size: 19px;
 }
@@ -119,9 +114,6 @@ summary {
 }
 .menu-toggle {
   display: none;
-}
-.hero {
-  padding-top: 66px;
 }
 .eyebrow {
   font-size: 10px;
@@ -137,22 +129,11 @@ summary {
   background: #27acbd;
   margin-right: 8px;
 }
-.serif {
-  font-family: "Instrument Serif", Georgia, serif;
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: -0.045em;
-}
 .hero-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 52px;
-}
-.hero-bottom p {
-  color: var(--muted);
-  font-size: 16px;
-  line-height: 1.8;
 }
 .hero-bottom > div {
   margin-right: 75px;
@@ -210,12 +191,6 @@ summary {
   font-size: 12px;
   box-shadow: 0 5px 25px #0001;
 }
-.benefit-strip {
-  border-bottom: 1px solid var(--line);
-  border-top: 1px solid var(--line);
-  background: #f0f8fa;
-  padding: 27px 0;
-}
 .benefit-strip .container {
   display: flex;
   align-items: center;
@@ -226,10 +201,6 @@ summary {
 .benefit-strip span:first-child {
   color: var(--muted);
   font-size: 11px;
-}
-.section {
-  padding-top: 110px;
-  padding-bottom: 110px;
 }
 .section-heading {
   display: flex;
@@ -301,9 +272,6 @@ h3 {
   letter-spacing: 1px;
   font-weight: 600;
 }
-.workspace {
-  background: #eef8fa;
-}
 .tabs {
   display: flex;
   gap: 10px;
@@ -321,11 +289,6 @@ h3 {
   font-size: 13px;
   display: flex;
   justify-content: space-between;
-}
-.tabs button[aria-selected="true"] {
-  background: var(--ink);
-  color: white;
-  border-color: var(--ink);
 }
 .showcase {
   padding: 16px 16px 0;
@@ -412,24 +375,13 @@ details p {
   color: var(--muted);
   font-size: 14px;
 }
-.contact {
-  background: var(--brand-tint);
-}
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
 }
-.contact h2 {
-  font-size: 68px;
-}
 .contact p {
   font-size: 14px;
-}
-.contact form {
-  background: var(--paper);
-  border-radius: 8px;
-  padding: 35px;
 }
 .contact form h3 {
   margin: 0 0 28px;
@@ -456,9 +408,6 @@ textarea {
   color: var(--ink);
   font-size: 12px;
   resize: vertical;
-}
-textarea {
-  margin-top: 5px;
 }
 .contact form > label {
   margin-top: 25px;
@@ -501,17 +450,8 @@ footer > a:last-child {
     padding: 0 24px;
     gap: 20px;
   }
-  .site-header nav {
-    gap: 18px;
-  }
-  .hero {
-    padding-top: 40px;
-  }
   .hero-bottom > div {
     margin-right: 0;
-  }
-  .feature-grid {
-    grid-template-columns: 1fr 1fr;
   }
   .feature:nth-child(2) {
     border-right: 0;
@@ -523,9 +463,6 @@ footer > a:last-child {
   .faq,
   .contact-grid {
     gap: 40px;
-  }
-  .contact h2 {
-    font-size: 56px;
   }
   .section {
     padding-block: 80px;
@@ -586,28 +523,8 @@ footer > a:last-child {
     display: flex;
     flex-direction: column;
   }
-  .hero {
-    padding-top: 35px;
-  }
-  .eyebrow {
-    font-size: 8px;
-    letter-spacing: 1.1px;
-  }
-  .hero-bottom {
-    display: block;
-    margin-bottom: 35px;
-  }
-  .hero-bottom p {
-    font-size: 14px;
-  }
   .hero-bottom > div {
     margin-top: 25px;
-  }
-  .hero-bottom .button {
-    width: 100%;
-  }
-  .hero-product {
-    padding: 0 7px;
   }
   .window-bar {
     font-size: 7px;
@@ -623,16 +540,6 @@ footer > a:last-child {
     padding: 9px;
     margin: 0 -7px;
   }
-  .benefit-strip {
-    padding: 20px 0;
-  }
-  .benefit-strip .container {
-    gap: 12px 20px;
-    font-size: 10px;
-  }
-  .section {
-    padding-block: 60px;
-  }
   .section-heading {
     display: block;
     margin-bottom: 30px;
@@ -641,36 +548,9 @@ footer > a:last-child {
     margin-top: 22px;
     font-size: 13px;
   }
-  h2 {
-    font-size: 46px;
-    letter-spacing: -2px;
-  }
-  .feature {
-    padding: 22px 18px;
-  }
-  .feature h3 {
-    font-size: 18px;
-    margin-top: 25px;
-  }
-  .feature p {
-    font-size: 12px;
-  }
-  .feature-label {
-    font-size: 7px;
-  }
   .tabs {
     gap: 5px;
     margin-top: 28px;
-  }
-  .tabs button {
-    font-size: 10px;
-    padding: 12px 9px;
-  }
-  .tabs button span {
-    display: none;
-  }
-  .showcase {
-    padding: 6px 6px 0;
   }
   .showcase-footer {
     display: block;
@@ -687,12 +567,6 @@ footer > a:last-child {
   }
   .why-list article {
     gap: 18px;
-  }
-  .contact h2 {
-    font-size: 56px;
-  }
-  .contact form {
-    padding: 24px;
   }
   .form-grid {
     gap: 20px 15px;
@@ -748,9 +622,6 @@ footer > a:last-child {
 .brand {
   flex-shrink: 0;
 }
-footer .brand-logo {
-  width: 140px;
-}
 .button {
   background: var(--primary-dark);
   border-color: var(--primary-dark);
@@ -759,18 +630,11 @@ footer .brand-logo {
   background: #146e7b;
   border-color: #146e7b;
 }
-.hero h1 .serif,
-h2 .serif {
-  color: var(--primary-dark);
-}
 .tabs button[aria-selected="true"] {
   background: var(--primary-dark);
   border-color: var(--primary-dark);
 }
 @media (max-width: 640px) {
-  .brand-logo {
-    width: 145px;
-  }
 }
 /* Refined product presentation with DentalLink brand accents. */
 :root {
