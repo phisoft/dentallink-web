@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>DentalLink | Keep patients connected.</title>
+    <title>DentalLink | Dental clinic software in Malaysia</title>
     <meta
       name="description"
       content="Appointments, patient records, charting, billing, recall, loyalty points and membership tiers in one workspace built for Malaysian dental clinics."
@@ -21,10 +21,117 @@
       property="og:image"
       content="https://www.dentallinkapp.com/assets/images/product/workstation.png"
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DentalLink" />
+    <meta property="og:url" content="https://www.dentallinkapp.com/" />
+    <meta property="og:locale" content="en_MY" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="1000" />
+    <meta
+      property="og:image:alt"
+      content="The DentalLink workstation showing a clinic's patient queue and dental chart"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="assets/images/dentallink_fav.ico" />
     <!-- shortcut: v= is the git content hash, bumped by hand when the file changes; add a build step if this is missed twice -->
     <link rel="stylesheet" href="style.css?v=d6ab667c5a4e" />
     <script src="assets/js/redesign.js?v=1a0de21d6c84" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.dentallinkapp.com/#organization",
+            "name": "DentalLink",
+            "legalName": "Phi Software Sdn Bhd",
+            "url": "https://www.dentallinkapp.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.dentallinkapp.com/assets/images/dentallink_logo.png",
+              "width": 200,
+              "height": 82
+            },
+            "telephone": "+60128669695",
+            "areaServed": {
+              "@type": "Country",
+              "name": "Malaysia"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.dentallinkapp.com/#website",
+            "url": "https://www.dentallinkapp.com/",
+            "name": "DentalLink",
+            "inLanguage": "en-MY",
+            "publisher": {
+              "@id": "https://www.dentallinkapp.com/#organization"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://www.dentallinkapp.com/#software",
+            "name": "DentalLink",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Windows, macOS, Web",
+            "description": "Appointments, patient records, charting, billing, recall, loyalty points and membership tiers in one workspace built for Malaysian dental clinics.",
+            "url": "https://www.dentallinkapp.com/",
+            "publisher": {
+              "@id": "https://www.dentallinkapp.com/#organization"
+            },
+            "featureList": [
+              "Appointments, walk-ins and the patient queue",
+              "Patient records and clinical charting",
+              "Billing and LHDN e-Invoice preparation",
+              "Recall plans, loyalty points and membership tiers",
+              "Workspace that keeps working when the connection drops"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.dentallinkapp.com/#faq",
+            "isPartOf": {
+              "@id": "https://www.dentallinkapp.com/#website"
+            },
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Can I see DentalLink before deciding?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Create a trial account to explore the patient, appointment, clinical, and billing workflows for your practice."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can we bring over our existing records?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tell us about your current system when you contact our team. We’ll review available exports and discuss the migration scope and onboarding plan with you."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does DentalLink support Malaysian e-Invoicing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "DentalLink includes an e-Invoice document preparation and validation workflow. Live MyInvois submission requires the clinic’s LHDN credentials and configuration."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What happens if we lose our connection?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The workstation can show cached records and queue supported writes during a temporary connection loss. Queued and refused changes are visible for review after reconnecting. Ask us to demonstrate the offline workflow for your setup."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
