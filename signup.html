@@ -27,8 +27,8 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="assets/images/dentallink_fav.ico" />
     <!-- shortcut: v= is the git content hash, bumped by hand when the file changes; add a build step if this is missed twice -->
-    <link rel="stylesheet" href="style.css?v=475cbb6eb8d0" />
-    <script src="assets/js/signup.js?v=7603872b41d6" defer></script>
+    <link rel="stylesheet" href="style.css?v=60472a77a916" />
+    <script src="assets/js/signup.js?v=77d9ae8760e2" defer></script>
   </head>
   <body class="signup-page">
     <header class="site-header signup-header">
@@ -88,7 +88,9 @@
       </section>
       <section class="signup-card" aria-labelledby="signup-heading">
         <h2 id="signup-heading">Start your trial.</h2>
-        <p class="signup-subtitle">A few details to get your clinic started.</p>
+        <p class="signup-subtitle">
+          A few details and we’ll email your verification link.
+        </p>
         <p class="signup-notice" id="registration-notice">
           Online account creation is not connected yet. This form previews the
           signup process; it won’t create an account or send your details.
@@ -129,33 +131,14 @@
                 placeholder="+60"
                 required
                 maxlength="30" /></label
-            ><label for="password"
-              >Create a password
-              <div class="password-field">
-                <input
-                  id="password"
-                  type="password"
-                  autocomplete="new-password"
-                  placeholder="At least 12 characters"
-                  minlength="12"
-                  required
-                  aria-describedby="password-help"
-                /><button
-                  type="button"
-                  id="toggle-password"
-                  aria-controls="password"
-                  aria-pressed="false"
-                >
-                  Show
-                </button>
-              </div>
-              <span class="field-help" id="password-help"
-                >Use at least 12 characters.</span
-              ></label
             >
           </div>
+          <p class="field-help">
+            We’ll email you a link to verify your address and set your
+            password.
+          </p>
           <button class="button signup-submit" type="submit">
-            Create trial account <span>↗</span>
+            Send verification email <span>↗</span>
           </button>
           <p
             id="signup-status"

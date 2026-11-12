@@ -1250,24 +1250,6 @@ footer .brand-logo {
 .signup-fields input {
   background: white;
 }
-.password-field {
-  position: relative;
-}
-.password-field input {
-  padding-right: 65px;
-}
-.password-field button {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 0;
-  background: none;
-  color: var(--primary-dark);
-  font-size: 12px;
-  padding: 6px;
-  cursor: pointer;
-}
 .field-help {
   display: block;
   font-size: 11px;
