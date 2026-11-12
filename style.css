@@ -747,6 +747,9 @@ body {
   padding: 0 8px 12px;
   color: #86868b;
 }
+.hero-product picture {
+  display: block;
+}
 .hero-product img {
   border-radius: 12px 12px 0 0;
 }

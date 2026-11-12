@@ -30,12 +30,12 @@
     <meta property="og:image:height" content="1000" />
     <meta
       property="og:image:alt"
-      content="The DentalLink workstation showing a clinic's week of appointments"
+      content="DentalLink workstation showing Patient 360 and the daily patient queue"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="assets/images/dentallink_fav.ico" />
     <!-- shortcut: v= is the git content hash, bumped by hand when the file changes; add a build step if this is missed twice -->
-    <link rel="stylesheet" href="style.css?v=d6ab667c5a4e" />
+    <link rel="stylesheet" href="style.css?v=475cbb6eb8d0" />
     <script src="assets/js/redesign.js?v=1a0de21d6c84" defer></script>
     <script type="application/ld+json">
       {
@@ -188,13 +188,28 @@
             <span><i></i><i></i><i></i></span><span>YOUR CLINIC, CONNECTED</span
             ><span class="window-status">● DentalLink workstation</span>
           </div>
-          <img
-            src="assets/images/product/clinical.png"
-            alt="DentalLink workstation showing the patient queue and dental charting workspace"
-            width="1600"
-            height="1000"
-            fetchpriority="high"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                assets/images/product/clinical-800.webp   800w,
+                assets/images/product/clinical-1600.webp 1600w
+              "
+              sizes="(max-width: 1200px) 100vw, 1120px"
+            />
+            <img
+              src="assets/images/product/clinical.png"
+              srcset="
+                assets/images/product/clinical-800.png   800w,
+                assets/images/product/clinical.png      1600w
+              "
+              sizes="(max-width: 1200px) 100vw, 1120px"
+              alt="DentalLink workstation showing the patient queue and dental charting workspace"
+              width="1600"
+              height="1000"
+              fetchpriority="high"
+            />
+          </picture>
           <div class="product-caption">
             <span class="live-dot"></span> A clearer picture of every patient’s
             day.
